@@ -2,10 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppScaffold from 'components/AppScaffold';
 
-const App = () => (
-  <>
-    <AppScaffold />
-  </>
-);
+import './index.scss';
 
-ReactDOM.render(<App />, document.getElementById('output'));
+ReactDOM.render(<AppScaffold />, document.getElementById('output'));
