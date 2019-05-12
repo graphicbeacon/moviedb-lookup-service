@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppScaffold from 'components/AppScaffold';
 
 const App = () => (
   <>
-    <h1>Hello, World!</h1>
+    <AppScaffold />
   </>
 );
 
