@@ -5,7 +5,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: path.join(__dirname, 'src/index.js'),
+  entry: [
+    path.join(__dirname, 'node_modules/bootstrap/dist/js/bootstrap.min.js'),
+    path.join(__dirname, 'src/index.js')
+  ],
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'dist')
@@ -13,7 +16,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      components: path.resolve(__dirname, 'src/components/')
+      components: path.resolve(__dirname, 'src/components/'),
+      node_modules: path.resolve(__dirname, 'node_modules/')
     }
   },
   module: {
@@ -24,7 +28,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           'style-loader', // creates style nodes from JS strings
           'css-loader', // translates CSS into CommonJS

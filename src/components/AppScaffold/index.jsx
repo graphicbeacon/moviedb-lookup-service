@@ -2,7 +2,12 @@ import React from 'react';
 
 const AppScaffold = () => (
   <>
-    <h1>Hello, World!</h1>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">
+        TheMovieDB Lookup Service
+      </a>
+    </nav>
+    <div className="container">{/* TODO Implement SearchProvider */}</div>
   </>
 );
 
