@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+// TODO: Move common logic into webpack.config.shared.js
+
 module.exports = {
   mode: 'production',
   entry: path.join(__dirname, 'src/index.js'),
