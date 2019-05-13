@@ -1,5 +1,5 @@
 {
-  "name": "moviedb-exercise",
+  "name": "moviedb-lookup-service",
   "version": "1.0.0",
   "description": "A search application for filtering movie data from The Movie DB",
   "main": "index.js",
