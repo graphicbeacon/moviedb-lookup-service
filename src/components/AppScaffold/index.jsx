@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MoviesFilterContainer from '../MoviesFilterContainer/index';
+
 const AppScaffold = () => (
   <>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -7,7 +9,7 @@ const AppScaffold = () => (
         TheMovieDB Lookup Service
       </a>
     </nav>
-    <div className="container">{/* TODO Implement SearchProvider */}</div>
+    <MoviesFilterContainer />
   </>
 );
 
