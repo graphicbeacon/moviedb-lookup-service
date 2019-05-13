@@ -16,8 +16,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
+      config: path.resolve(__dirname, 'src/config/'),
       components: path.resolve(__dirname, 'src/components/'),
-      node_modules: path.resolve(__dirname, 'node_modules/')
+      node_modules: path.resolve(__dirname, 'node_modules/'),
+      services: path.resolve(__dirname, 'src/services/')
     }
   },
   module: {

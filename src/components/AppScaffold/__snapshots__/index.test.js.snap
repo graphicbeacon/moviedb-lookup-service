@@ -33,6 +33,7 @@ Array [
               className="form-control form-control-lg"
               data-testid="searchInput"
               onChange={[Function]}
+              placeholder="Enter term and search"
               type="search"
               value=""
             />
