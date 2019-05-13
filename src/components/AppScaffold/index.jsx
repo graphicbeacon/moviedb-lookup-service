@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MoviesFilterContainer from '../MoviesFilterContainer/index';
+import MoviesFilterContainer from 'components/MoviesFilterContainer/index';
 
 const AppScaffold = () => (
   <>

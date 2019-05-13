@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GLOBAL_CONFIG } from 'config/constants';
+import MoviesFilterForm from 'components/MoviesFilterForm/index';
 import MoviesService from 'services/MoviesService';
-import MoviesFilterForm from '../MoviesFilterForm/index';
 
 const { endpoint, apiKey } = GLOBAL_CONFIG;
 const moviesService = new MoviesService(apiKey, endpoint);

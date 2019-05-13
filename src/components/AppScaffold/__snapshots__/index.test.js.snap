@@ -52,6 +52,19 @@ Array [
         </form>
       </div>
     </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <div
+          className="alert alert-secondary"
+        >
+          No movies to display
+        </div>
+      </div>
+    </div>
   </div>,
 ]
 `;
