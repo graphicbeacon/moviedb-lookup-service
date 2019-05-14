@@ -46,6 +46,7 @@ exports[`<MoviesFilterContainer /> should match generated snapshot 1`] = `
   >
     <div
       className="col-sm-12"
+      data-testid="noResultsDisplay"
     >
       <div
         className="alert alert-secondary"

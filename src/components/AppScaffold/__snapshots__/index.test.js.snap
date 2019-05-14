@@ -57,6 +57,7 @@ Array [
     >
       <div
         className="col-sm-12"
+        data-testid="noResultsDisplay"
       >
         <div
           className="alert alert-secondary"
