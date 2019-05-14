@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MoviesFilterResultsCard /> should match generated snapshot 1`] = `
+<div
+  className="card"
+  data-testid="resultsCard"
+>
+  <div
+    className="card-body"
+  >
+    <h3
+      className="card-title"
+      data-testid="resultsCardTitle"
+    />
+    <p
+      className="card-text"
+      data-testid="resultsCardDesc"
+    />
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GLOBAL_CONFIG } from 'config/constants';
 import MoviesFilterForm from 'components/MoviesFilterForm/index';
+import MoviesFilterResultsCard from 'components/MoviesFilterResultsCard/index';
 import MoviesService from 'services/MoviesService';
 
 const { endpoint, apiKey } = GLOBAL_CONFIG;
@@ -37,14 +38,9 @@ const MoviesFilterContainer = () => {
         )}
         {/* TODO Cover with unit test */}
         {movies.length > 0 &&
-          movies.map(({ original_title, overview }) => (
+          movies.map(movieDetails => (
             <div className="col-sm-4 mb-3">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">{original_title}</h3>
-                  <p className="card-text">{overview}</p>
-                </div>
-              </div>
+              <MoviesFilterResultsCard {...movieDetails} />
             </div>
           ))}
       </div>
